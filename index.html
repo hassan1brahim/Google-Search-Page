@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Google Search Clone</title>
+    <link rel="stylesheet" href="style.css"> <!-- External CSS link -->
+</head>
+<body>
+
+    <!-- Top Navigation Bar -->
+    <div class="top">
+        <!-- Left-side navigation -->
+        <div class="top-left">
+            <a href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header" target="_blank">About</a>
+            <a href="https://store.google.com/us/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US&pli=1" target="_blank">Store</a>
+        </div>
+
+        <!-- Right-side navigation -->
+        <div class="top-right">
+            <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">Gmail</a>
+            <!-- blank will help open the link in another tab-->
+            <a href="images.html">Images</a>
+            <!--Links to another html file-->
+            <a href="advanced.html">Advanced Research</a>
+        </div>
+    </div>
+
+    <!-- Middle: Google Logo -->
+    <div class="middle">
+        <img src="google.png" alt="Google" style="width: 272px; height: 240px;">
+    </div>
+
+    <!-- Search Bar Area -->
+    <div class="bottom">
+        <form action="https://www.google.com/search" method="GET">
+          <!-- This sends a get request to the google.com/search with the specific search we put
+           A GET request is what your browser sends to a website when it wants to get a page or some data.-->
+            <div class="search-box">
+                <img src="search.png" alt="Search" class="icon" width="20">
+                <input type="text" name="q" placeholder="Search Google">
+                <img src="mic.png" alt="Mic" class="icon">
+                <img src="image.png" alt="Lens" class="icon">
+            </div>
+
+            <!-- Submit Buttons -->
+            <div class="footer">
+                <input type="submit" value="Google Search">
+                <input type="submit" name="btnI" value="I'm Feeling Lucky">
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

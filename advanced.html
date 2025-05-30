@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Google Advanced Search</title>
+    <link rel="stylesheet" href="style.css"> <!-- Shared CSS file -->
+    <style>
+      * { /* ALways do this to avoid any styling issues later */
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: Roboto, Arial, sans-serif;
+      }
+    
+      h3 { 
+        color: red;
+        margin: 20px;
+        font-size: 17px;
+      }
+    
+      .header {
+        display: flex;
+        justify-content: space-between; /* Pushing the logo and link to the opposite sides of the page */
+        align-items: center;
+        padding: 10px 20px;
+      }
+    
+      h2 {
+        margin: 20px;
+        font-size: 25px;
+      }
+    
+      table {
+        margin: 20px;
+        border-spacing: 10px; /* Adds space between inputs */
+        margin-bottom: 0px;
+      }
+    
+      td input[type="text"] {
+        width: 400px; /* Increase Width of the input fields */
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #dfe1e5;
+        border-radius: 0px;
+        outline: none;
+        transition: box-shadow 0.2s ease-in-out; /* Smooth transition for focus effect */
+      }
+    
+      td input[type="text"]:focus {
+        box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+        border-color: #4285f4;
+      }
+    
+      td {
+        vertical-align: middle; /* Aligns the text in the middle of the cell, pretty un-noticable */
+        padding: 5px 10px;
+      }
+    
+      .end {
+        display: flex;
+        margin-left: 510px; /* Aligns the submit button to the upper text box */
+        margin-right: 40px;
+      }
+    
+      .end input[type="submit"] {
+        background-color: #4285f4;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 14px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+    
+      .end input[type="submit"]:hover {
+        background-color: #357ae8;
+      }
+    </style>
+    
+</head>
+<body>
+
+    <!-- Header and nav -->
+    <div class = "header">
+      <img src="google.png" alt="Google" style="width: 50px; height: auto;">
+        
+        <a href="index.html">Back to Google Search</a>
+    </div>
+    <h3>Advanced Search</h3>
+      <hr> <!--A line-->
+    <!-- Instructional heading -->
+    <h2>Find pages with...</h2>
+
+    <!-- Advanced Search Form -->
+    <form action="https://www.google.com/search" method="GET">
+        <table>
+          <!--No other better way to display them then table-->
+            <tr>
+                <td><label for="as_q">All these words:</label></td>
+                <td><input type="text" id="as_q" name="as_q"></td>
+                <td><label for="as_q">Type the important words: tricolor rat terrier</label></td>
+            </tr>
+            <tr>
+                <td><label for="as_epq">This exact word or phrase:</label></td>
+                <td><input type="text" id="as_epq" name="as_epq"></td>
+                <td><label for="as_epq">Put the exact words in quotes: "rat terrier"</label></td>
+            </tr>
+            <tr>
+                <td><label for="as_oq">Any of these words:</label></td>
+                <td><input type="text" id="as_oq" name="as_oq"></td>
+                <td><label for="as_oq">Type OR between all the words you want: miniature OR standard</label></td>
+            </tr>
+            <tr>
+                <td><label for="as_eq">None of these words:</label></td>
+                <td><input type="text" id="as_eq" name="as_eq"></td>
+                <td><label for="as_eq">Put a minus sign just before the words you don't want: -rodent, "Jack Ruselle"</label></td>
+            </tr>
+        </table>
+
+        <!-- Submit search request -->
+        <br>
+        <div class="end">
+        <input type="submit" value="Advanced Search">
+      </div>
+    </form>
+
+</body>
+</html>

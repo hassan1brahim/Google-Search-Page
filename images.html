@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Google Images Clone</title>
+    <link rel="stylesheet" href="style.css"> <!-- Shared CSS file -->
+</head>
+<body>
+
+    <!-- 🔙 Top Nav with shared class .top -->
+    <div class="top">
+        <div class="top-left">
+            <a href="index.html">Back to Google Search</a>
+        </div>
+    </div>
+
+    <!-- Heading area (uses .middle) -->
+    <div class="middle">
+      <img src="google.png" alt="Google" style="width: 272px; height: 240px;">
+    </div>
+
+    <!-- Bottom search area -->
+    <div class="bottom">
+      <form action="https://www.google.com/search">
+        <input type="hidden" name="tbm" value="isch"> <!-- makes it go to Images -->
+    
+        <div class="search-box">
+            <img src="search.png" alt="Search" class="icon" width="20">
+            <input type="text" name="q" placeholder="Search Google Images">
+            <img src="mic.png" alt="Mic" class="icon">
+            <img src="image.png" alt="Lens" class="icon">
+        </div>
+    
+        <div class="footer">
+            <input type="submit" value="Google Search">
+            <input type="submit" name="btnI" value="I'm Feeling Lucky">
+        </div>
+    </form>
+    
+    </div>
+
+</body>
+</html>
